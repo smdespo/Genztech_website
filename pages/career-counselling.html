@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Career Counselling | Genztech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../assets/css/genztech.css"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: { extend: {
+    colors: {
+      "surface": "#f8f9fa","background": "#f8f9fa","primary": "#162c43","primary-container": "#2d425a",
+      "on-primary": "#ffffff","on-primary-container": "#99aecb","secondary": "#046a61",
+      "on-secondary": "#ffffff","secondary-container": "#9defe2","on-secondary-container": "#106f65",
+      "surface-container-lowest": "#ffffff","surface-container-low": "#f3f4f5",
+      "surface-container": "#edeeef","surface-container-high": "#e7e8e9",
+      "on-surface": "#191c1d","on-surface-variant": "#43474d",
+      "outline": "#74777d","outline-variant": "#c4c6cd",
+      "tertiary": "#1e2c3b","tertiary-container": "#344252","on-tertiary-container": "#a0aec2",
+      "secondary-fixed": "#a0f1e5","on-secondary": "#ffffff","inverse-primary": "#b3c8e6"
+    },
+    borderRadius: { "DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px" },
+    spacing: { "lg": "48px","md": "24px","sm": "12px","margin-desktop": "120px","base": "8px","margin-mobile": "16px","xl": "80px","gutter": "24px","xs": "4px" },
+    fontFamily: { "body-lg": ["Hanken Grotesk"],"caption": ["Hanken Grotesk"],"title-md": ["Hanken Grotesk"],"headline-xl": ["Hanken Grotesk"],"headline-lg": ["Hanken Grotesk"],"body-md": ["Hanken Grotesk"],"label-md": ["Hanken Grotesk"] },
+    fontSize: {
+      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+      "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+      "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+      "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+    }
+  }}
+}
+</script>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop bg-surface border-b border-outline-variant" style="height:90px;">
+  <div class="flex items-center h-full">
+    <a href="../pages/homepage.html"><img src="../genztech_logo.png" alt="Genztech Logo" style="height:72px; width:auto; object-fit:contain;" /></a>
+  </div>
+  <nav class="hidden lg:flex items-center gap-1">
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="homepage.html">Home</a>
+    <div class="dropdown">
+      <a class="text-[16px] font-semibold text-secondary border-b-2 border-secondary pb-1 px-3 py-2 flex items-center gap-1" href="career-counselling.html">Career Counselling <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu">
+        <a href="#">Student Career Guidance</a>
+        <a href="#">Domain Selection Guidance</a>
+        <a href="#">Industry Expert Consultation</a>
+        <a href="#">Skill Roadmap</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2 flex items-center gap-1" href="internships.html">Internships <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu">
+        <a href="internships.html">1.5 Month Internship</a>
+        <a href="internships.html">3 Month Internship</a>
+        <a href="internships.html">6 Month Internship</a>
+        <a href="internships.html">Industry Projects</a>
+        <a href="internships.html">Live Training Programs</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2 flex items-center gap-1" href="certifications.html">Certifications <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu">
+        <a href="#">AI/ML Certifications</a>
+        <a href="#">CAD/CAM/CAE</a>
+        <a href="#">IoT Certifications</a>
+        <a href="#">SAP Certifications</a>
+        <a href="#">Python Certifications</a>
+        <a href="#">Industry 4.0</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2 flex items-center gap-1" href="short-term-courses.html">Courses <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu">
+        <a href="short-term-courses.html">AI & Data Science</a>
+        <a href="short-term-courses.html">Python</a>
+        <a href="short-term-courses.html">IoT</a>
+        <a href="short-term-courses.html">CAD/CAM/CAE</a>
+        <a href="short-term-courses.html">Industry 4.0</a>
+        <a href="short-term-courses.html">SAP</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2 flex items-center gap-1" href="domain-cs.html">Domains <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu">
+        <div class="submenu-header">By Field</div>
+        <a href="domain-cs.html">Computer Science / IT</a>
+        <a href="domain-mechanical.html">Mechanical Engineering</a>
+        <a href="domain-mba.html">MBA / Finance</a>
+        <a href="domain-etc.html">E&TC / Electronics</a>
+      </div>
+    </div>
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="placement.html">Placement</a>
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="contact.html">Contact</a>
+  </nav>
+  <div class="flex items-center gap-sm">
+    <a href="contact.html"><button class="hidden lg:block px-md py-sm text-[16px] font-bold text-primary hover:text-secondary transition-all">Contact Us</button></a>
+    <a href="../signuppage.html"><button class="bg-primary text-on-primary px-md py-sm rounded-full text-[16px] font-bold hover:opacity-90 transition-all shadow-md">Enroll Now</button></a>
+    <button class="lg:hidden p-2" onclick="toggleMobileMenu()"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu lg:hidden bg-surface border-b border-outline-variant px-margin-mobile py-md">
+  <div class="flex flex-col gap-sm">
+    <a href="homepage.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Home</a>
+    <a href="career-counselling.html" class="font-semibold text-secondary py-2 border-b border-outline-variant">Career Counselling</a>
+    <a href="internships.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Internships</a>
+    <a href="certifications.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Certifications</a>
+    <a href="short-term-courses.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Short Term Courses</a>
+    <a href="placement.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Placement</a>
+    <a href="contact.html" class="font-semibold text-primary py-2">Contact</a>
+    <a href="../signuppage.html"><button class="w-full bg-primary text-on-primary py-sm rounded-full font-bold mt-sm">Enroll Now</button></a>
+  </div>
+</div>
+
+<!-- Page Hero: replace data-hero-image with your own image link anytime -->
+<section class="page-hero relative min-h-[380px] flex items-end px-margin-mobile md:px-margin-desktop pb-xl pt-xl text-on-primary" data-hero-image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80">
+  <div class="page-hero-media"></div>
+  <div class="hero-overlay"></div>
+  <div class="relative z-10 max-w-3xl space-y-md">
+    <div class="badge badge-teal"><span class="material-symbols-outlined text-[16px]">psychology</span> Career Counselling</div>
+    <h1 class="font-headline-xl text-headline-xl text-white">Find Your Perfect Career Path</h1>
+    <p class="font-body-lg text-body-lg text-white/85 max-w-xl">One-on-one guidance from industry experts to help you make the right domain choice, build skills, and launch your career with confidence.</p>
+    <div class="flex flex-col sm:flex-row gap-md pt-base">
+      <a href="#book-session"><button class="bg-secondary text-on-secondary px-xl py-md rounded-full font-title-md hover:scale-105 transition-transform flex items-center gap-sm">Book Free Session <span class="material-symbols-outlined">calendar_today</span></button></a>
+      <a href="#roadmap"><button class="border border-white/50 text-white px-xl py-md rounded-full font-title-md hover:bg-white/10 transition-colors">See Roadmap</button></a>
+    </div>
+  </div>
+</section>
+
+<!-- What We Offer -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="text-center mb-lg">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Our Counselling Services</h2>
+    <div class="section-accent"></div>
+    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Personalized guidance designed to align your strengths, interests, and market demand.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant p-md rounded-xl">
+      <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-secondary card-icon">person_search</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary mb-xs">Student Career Guidance</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">Personalized 1:1 sessions to map your academic background to real-world opportunities.</p>
+    </div>
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant p-md rounded-xl">
+      <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-secondary card-icon">category</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary mb-xs">Domain Selection Guidance</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">Data-driven insights into which domain (CS, Mech, MBA, E&TC) suits your profile best.</p>
+    </div>
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant p-md rounded-xl">
+      <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-secondary card-icon">groups</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary mb-xs">Industry Expert Consultation</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">Live sessions with working professionals from top MNCs — real career insights, not theory.</p>
+    </div>
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant p-md rounded-xl">
+      <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-secondary card-icon">route</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary mb-xs">Skill Roadmap</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">A curated, step-by-step learning plan from beginner to placement-ready in your chosen field.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Roadmap Section -->
+<section id="roadmap" class="px-margin-mobile md:px-margin-desktop py-xl bg-surface-container-low">
+  <div class="text-center mb-lg">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Career Roadmap Process</h2>
+    <div class="section-accent"></div>
+  </div>
+  <div class="max-w-3xl mx-auto">
+    <div class="flex flex-col gap-0">
+      <!-- Step 1 -->
+      <div class="flex gap-md items-start">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="pb-lg">
+          <span class="badge badge-teal mb-sm">Step 01</span>
+          <h3 class="font-title-md text-title-md text-primary mb-xs">Initial Assessment</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">30-minute free session to understand your background, goals, and current skill level. No prerequisites needed.</p>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="flex gap-md items-start">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="pb-lg">
+          <span class="badge badge-navy mb-sm">Step 02</span>
+          <h3 class="font-title-md text-title-md text-primary mb-xs">Domain Mapping</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">We align your strengths with high-demand domains: AI/ML, SAP, CAD/CAE, IoT, or Industry 4.0.</p>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="flex gap-md items-start">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="pb-lg">
+          <span class="badge badge-teal mb-sm">Step 03</span>
+          <h3 class="font-title-md text-title-md text-primary mb-xs">Personalized Roadmap</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">Receive a detailed week-by-week learning plan, including certifications, projects, and internship timeline.</p>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="flex gap-md items-start">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="pb-lg">
+          <span class="badge badge-navy mb-sm">Step 04</span>
+          <h3 class="font-title-md text-title-md text-primary mb-xs">Ongoing Mentoring</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">Monthly check-ins with your dedicated mentor to track progress, solve blockers, and fine-tune your path.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Expert Mentors -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="text-center mb-lg">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Our Expert Mentors</h2>
+    <div class="section-accent"></div>
+    <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Active industry professionals who guide you based on what's actually happening in the job market today.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col items-center text-center">
+      <div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-[40px] text-on-primary-container">person</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary">SAP & ERP Expert</h3>
+      <p class="font-body-md text-body-md text-secondary mb-sm">15+ years | SAP Certified Consultant</p>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm">Guiding students into SAP FICO, MM, SD modules with industry-ready skills and placement prep.</p>
+    </div>
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col items-center text-center">
+      <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-[40px] text-on-secondary">memory</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary">AI & Data Science Lead</h3>
+      <p class="font-body-md text-body-md text-secondary mb-sm">10+ years | ML Engineer, MNC</p>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm">Specializes in mapping fresh graduates to high-growth AI/ML, Python, and analytics careers.</p>
+    </div>
+    <div class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col items-center text-center">
+      <div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-md">
+        <span class="material-symbols-outlined text-[40px] text-on-primary-container">precision_manufacturing</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-primary">Mechanical Design Expert</h3>
+      <p class="font-body-md text-body-md text-secondary mb-sm">12+ years | CATIA V5, ANSYS</p>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm">Helps Mechanical & E&TC students build careers in CAD/CAE, Digital Twin, and Industry 4.0.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="bg-primary text-on-primary py-xl px-margin-mobile md:px-margin-desktop">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+    <div><div class="text-[48px] font-black text-secondary-fixed">500+</div><div class="font-body-md text-body-md text-on-primary/80">Students Counselled</div></div>
+    <div><div class="text-[48px] font-black text-secondary-fixed">95%</div><div class="font-body-md text-body-md text-on-primary/80">Satisfaction Rate</div></div>
+    <div><div class="text-[48px] font-black text-secondary-fixed">20+</div><div class="font-body-md text-body-md text-on-primary/80">Expert Mentors</div></div>
+    <div><div class="text-[48px] font-black text-secondary-fixed">Free</div><div class="font-body-md text-body-md text-on-primary/80">First Session</div></div>
+  </div>
+</section>
+
+<!-- Book Session CTA -->
+<section id="book-session" class="px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="max-w-2xl mx-auto bg-surface-container-lowest border border-outline-variant rounded-xl p-lg text-center shadow-sm">
+    <span class="material-symbols-outlined text-[48px] text-secondary mb-md block">calendar_add_on</span>
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Book Your Free Counselling Session</h2>
+    <p class="font-body-md text-body-md text-on-surface-variant mb-lg max-w-md mx-auto">No commitment required. Just a 30-minute conversation that could change your career trajectory.</p>
+    <form id="enroll-form" class="space-y-md text-left max-w-lg mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+        <div><label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Full Name</label>
+        <input type="text" placeholder="Your Name" class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md"/></div>
+        <div><label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Email</label>
+        <input type="email" placeholder="you@email.com" class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md"/></div>
+      </div>
+      <div><label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Domain of Interest</label>
+      <select class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md">
+        <option value="">Select Domain</option>
+        <option>Computer Science / AI</option>
+        <option>Mechanical Engineering</option>
+        <option>MBA / Finance</option>
+        <option>E&TC / Electronics</option>
+      </select></div>
+      <button type="submit" class="w-full bg-primary text-on-primary py-md rounded-full font-title-md hover:bg-secondary transition-all flex items-center justify-center gap-sm">
+        Book Free Session <span class="material-symbols-outlined">arrow_forward</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop pt-xl pb-lg flex flex-col gap-gutter bg-primary text-on-primary">
+  <div class="flex flex-col md:flex-row justify-between items-start gap-gutter">
+    <div class="max-w-sm">
+      <span class="font-headline-lg text-headline-lg font-bold text-on-primary mb-md block">Genztech</span>
+      <p class="font-body-md text-body-md text-on-primary/80 mb-lg">A VSK Enterprises Tech Venture. Transforming careers through specialized industry education.</p>
+      <div class="flex gap-md">
+        <a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+        <a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">business</span></a>
+        <a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="contact.html"><span class="material-symbols-outlined">mail</span></a>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-xl">
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md font-bold mb-xs">Navigation</span>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="homepage.html">Home</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="internships.html">Internships</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="certifications.html">Certifications</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="placement.html">Placement</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md font-bold mb-xs">Domains</span>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-cs.html">Computer Science</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-mechanical.html">Mechanical</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-mba.html">MBA / Finance</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-etc.html">E&TC</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full border-t border-on-primary/10 pt-md flex flex-col md:flex-row justify-between items-center gap-md">
+    <span class="font-caption text-caption text-on-primary/60">© 2026 Genztech IT Training & Consulting. A VSK Enterprises Tech Venture.</span>
+    <div class="flex items-center gap-xs text-on-primary/60 font-caption text-caption">
+      <span class="material-symbols-outlined text-[14px]">language</span> English (Global)
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/genztech.js"></script>
+</body>
+</html>

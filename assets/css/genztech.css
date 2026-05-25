@@ -1,0 +1,160 @@
+/* ============================================
+   Genztech Global Stylesheet
+   Dark Navy (#162c43) + Teal (#046a61) theme
+   ============================================ */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Bento dot pattern background */
+.bento-bg {
+    background-image: radial-gradient(circle at 2px 2px, #e9ecef 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+/* Card hover lift */
+.card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Section divider accent */
+.section-accent {
+    width: 80px;
+    height: 4px;
+    background: #046a61;
+    border-radius: 9999px;
+    margin: 0 auto 24px;
+}
+
+/* Dropdown menu */
+.dropdown { position: relative; }
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: #fff;
+    border: 1px solid #c4c6cd;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    z-index: 200;
+    padding: 8px 0;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover { display: block; }
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #162c43;
+    transition: background 0.15s, color 0.15s;
+}
+.dropdown-menu a:hover {
+    background: #f3f4f5;
+    color: #046a61;
+}
+.dropdown-menu .submenu-header {
+    padding: 6px 20px 2px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #74777d;
+    text-transform: uppercase;
+}
+
+/* Mobile nav */
+.mobile-menu { display: none; }
+.mobile-menu.open { display: block; }
+
+/* Stat counter highlight */
+.stat-num {
+    font-size: 48px;
+    font-weight: 800;
+    color: #162c43;
+    line-height: 1;
+}
+
+/* Badge pill */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.badge-teal { background: #9defe2; color: #046a61; }
+.badge-navy { background: #d1e4ff; color: #162c43; }
+
+/* Timeline */
+.timeline-dot {
+    width: 16px; height: 16px;
+    background: #046a61;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #046a61;
+    flex-shrink: 0;
+}
+.timeline-line {
+    width: 2px;
+    flex-grow: 1;
+    background: #c4c6cd;
+    min-height: 40px;
+}
+
+/* WhatsApp CTA */
+.whatsapp-btn {
+    background: #25D366;
+    color: #fff;
+    border-radius: 9999px;
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s;
+}
+.whatsapp-btn:hover { opacity: 0.88; }
+
+/* Page hero gradient overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(22,44,67,0.82) 0%, rgba(4,106,97,0.55) 100%);
+}
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #162c43;
+    isolation: isolate;
+}
+
+.page-hero-media {
+    position: absolute;
+    inset: 0;
+    background-image: var(--hero-image, linear-gradient(135deg, #162c43 0%, #046a61 100%));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+}
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+    .hide-mobile { display: none !important; }
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Genztech | IT Training &amp; Consulting - Grow With Mentors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed": "#0f1c2c",
+                    "tertiary": "#1e2c3b",
+                    "on-secondary-fixed": "#00201c",
+                    "error-container": "#ffdad6",
+                    "surface": "#f8f9fa",
+                    "on-secondary-container": "#106f65",
+                    "background": "#f8f9fa",
+                    "primary-container": "#2d425a",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#d6e4f9",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#a0aec2",
+                    "on-surface": "#191c1d",
+                    "on-error": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#43474d",
+                    "inverse-primary": "#b3c8e6",
+                    "tertiary-container": "#344252",
+                    "primary": "#162c43",
+                    "secondary": "#046a61",
+                    "on-primary-container": "#99aecb",
+                    "surface-tint": "#4b6079",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-primary-fixed": "#041d33",
+                    "on-secondary-fixed-variant": "#005049",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3a4859",
+                    "on-primary-fixed-variant": "#334861",
+                    "secondary-fixed-dim": "#84d5c9",
+                    "secondary-fixed": "#a0f1e5",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-bright": "#f8f9fa",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed": "#d1e4ff",
+                    "tertiary-fixed-dim": "#bac8dc",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#b3c8e6",
+                    "secondary-container": "#9defe2",
+                    "outline": "#74777d",
+                    "surface-variant": "#e1e3e4",
+                    "outline-variant": "#c4c6cd",
+                    "on-background": "#191c1d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "margin-desktop": "120px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Hanken Grotesk"],
+                    "caption": ["Hanken Grotesk"],
+                    "title-md": ["Hanken Grotesk"],
+                    "headline-xl": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .course-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop bg-surface dark:bg-surface-container-lowest border-b border-outline-variant dark:border-outline" style="height:90px;">
+<div class="flex items-center h-full">
+        <img src="genztech_logo.png" alt="Genztech Logo" style="height:82px; width:auto; object-fit:contain;" />
+</div>
+<nav class="hidden md:flex items-center gap-1">
+    <a class="text-[20px] font-bold text-secondary border-b-2 border-secondary pb-1 px-4 py-2 transition-all" href="pages/homepage.html">Home</a>
+    <a class="text-[20px] font-bold text-primary hover:text-secondary transition-colors px-4 py-2" href="signuppage.html">Sign Up</a>
+    <a class="text-[20px] font-bold text-primary hover:text-secondary transition-colors px-4 py-2" href="loginpage.html">Log In</a>
+    <a class="text-[18px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="#">Career Counselling</a>
+    <a class="text-[18px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="#">Internships</a>
+    <a class="text-[18px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="#">Certifications</a>
+    <a class="text-[18px] font-semibold text-primary hover:text-secondary transition-colors px-3 py-2" href="#">Short Term Courses</a>
+</nav>
+<div class="flex items-center gap-sm">
+    <button class="hidden lg:block px-xl py-md text-[22px] font-bold text-primary hover:text-secondary transition-all">Contact Us</button>
+    <a href="signuppage.html"><button class="bg-primary text-on-primary px-10 py-4 rounded-full text-[22px] font-bold hover:opacity-90 transition-all shadow-md">Enroll Now</button></a>
+</div>
+</header>
+<!-- Hero Section -->
+<!-- CHANGED: items-center → items-end, added pb-[100px] to position content lower -->
+<section class="relative w-full min-h-[819px] flex items-end px-margin-mobile md:px-margin-desktop pb-[100px] pt-xl overflow-hidden bg-transparent text-primary">
+<!-- Hero Background Image Slot -->
+<div class="absolute inset-0 pointer-events-none" style="z-index:1;">
+    <img src="bgimage.png" class="w-full h-full object-cover" style="opacity:1;" />
+    <div style="position:absolute; inset:0; background: rgba(22,44,67,0.65);"></div>
+</div>
+<div class="relative z-10 max-w-4xl space-y-md">
+<div class="inline-flex items-center gap-xs px-sm py-xs bg-secondary-container text-on-secondary-container rounded-lg font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                IT Training &amp; Consulting
+            </div>
+<!-- CHANGED: text color from text-primary (dark) to text-white for visibility on dark overlay -->
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] leading-tight text-white">Grow With Mentors</h1>
+<!-- CHANGED: Improved writeup to match classroom/mentoring image context -->
+<p class="font-body-lg text-body-lg text-white/85 max-w-2xl">
+                Learn directly from working industry professionals in a real classroom setting. Hands-on projects, expert mentorship, and direct placement support — everything you need to launch your IT career.
+            </p>
+<div class="flex flex-col sm:flex-row gap-md pt-base">
+<button class="bg-secondary text-on-secondary px-xl py-md rounded-full font-title-md text-title-md hover:scale-105 transition-transform flex items-center justify-center gap-sm">
+                    Explore Courses
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-white/50 text-white px-xl py-md rounded-full font-title-md text-title-md hover:bg-white/10 transition-colors flex items-center justify-center gap-sm">
+                    Our Services
+                </button>
+</div>
+</div>
+</section>
+<!-- Why Genztech Bento Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+<div class="mb-lg text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-base">Why Genztech?</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="md:col-span-2 bg-primary-container p-lg rounded-xl flex flex-col justify-between text-on-primary-container relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="font-headline-lg text-headline-lg text-white mb-md">Industry-Led On-The-Job Training</h3>
+<ul class="space-y-sm font-body-md text-body-md">
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary">check_circle</span> Learn from Certified Consultants &amp; Industry Experts</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary">check_circle</span> Global Certifications &amp; Career Guidance</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary">check_circle</span> Flexible Learning Formats: Offline, Online, Hybrid</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary">check_circle</span> Direct Placement Assistance</li>
+</ul>
+</div>
+<div class="absolute -right-12 -bottom-12 opacity-10 group-hover:rotate-12 transition-transform duration-700">
+<span class="material-symbols-outlined text-[300px]">school</span>
+</div>
+</div>
+<div class="bg-secondary p-lg rounded-xl text-on-secondary flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[64px] mb-md" data-weight="fill">workspace_premium</span>
+<h3 class="font-title-md text-title-md mb-sm">Freelance Consulting</h3>
+<p class="font-body-md text-body-md">Expert Staffing Solutions and professional IT consulting for global enterprises.</p>
+<button class="mt-md bg-white text-secondary px-md py-sm rounded-full font-label-md text-label-md">Learn More</button>
+</div>
+</div>
+</section>
+<!-- Featured Courses / Domains -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Our Core Domains</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized training modules designed for modern career paths in high-demand technical fields.</p>
+</div>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-xs hover:underline" href="#">View All Courses <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- SAP -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl course-card-hover transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 rounded-bl-3xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">settings_suggest</span>
+</div>
+<div class="mt-md">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-xs">SAP</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Enterprise Resource Planning</p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">ABAP</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">MM/SD</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">FICO</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">S/4HANA</span>
+</div>
+<button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md text-label-md hover:bg-secondary hover:text-white transition-colors">Details</button>
+</div>
+</div>
+<!-- CAD/CAE -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl course-card-hover transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 rounded-bl-3xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">architecture</span>
+</div>
+<div class="mt-md">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-xs">CAD/CAE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Engineering Design &amp; Analysis</p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">CATIA-V5</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">SIEMENS NX</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">ANSYS</span>
+</div>
+<button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md text-label-md hover:bg-secondary hover:text-white transition-colors">Details</button>
+</div>
+</div>
+<!-- AI -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl course-card-hover transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 rounded-bl-3xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">memory</span>
+</div>
+<div class="mt-md">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-xs">AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Machine Learning &amp; Neural Nets</p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">PYTHON</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">PYTORCH</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">MLFLOW</span>
+</div>
+<button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md text-label-md hover:bg-secondary hover:text-white transition-colors">Details</button>
+</div>
+</div>
+<!-- Data Analytics -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl course-card-hover transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 rounded-bl-3xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">leaderboard</span>
+</div>
+<div class="mt-md">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-xs">Analytics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Business Intelligence &amp; Data</p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">EXCEL</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">SQL</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">POWER BI</span>
+<span class="bg-surface-container px-sm py-1 rounded text-[12px] font-semibold text-primary">TABLEAU</span>
+</div>
+<button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md text-label-md hover:bg-secondary hover:text-white transition-colors">Details</button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary-container rounded-2xl -z-10 group-hover:rotate-1 transition-transform"></div>
+<img class="rounded-xl w-full h-[500px] object-cover shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYGyPN4mK0V48RgQic4rYx8p8pZo9P35h1nbX2QGCDz21n-eESVI6Dp2_b1OYmecDj3JVPtYAQen59u2A9yfWipZLMXhXIJwjqimoOA_Ic4qIU0ZosPl9hlTjLgTjPMBpOh-ZgQ0Pwgn77wL6PYov4scqbaISKuIFlWAkpXN1aXYGz-xYG2eY0phYqZpWQSrmTv0k61n65TMqTt4PKCLHCh5jGuPpy08tJX-C_52Wyy204hWfUyYPRnFYyRkM4DAcJaguMa3aV4iI" alt="Genztech classroom"/>
+</div>
+<div class="space-y-md">
+<div class="flex items-center gap-sm">
+<span class="w-12 h-[2px] bg-secondary"></span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">About Us</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Empowering People and Organisations</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Genztech IT Training &amp; Consulting is focused on empowering people and organisations with industry-led training solutions to transform educational and skill development domains for the digital world.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Our curriculum is crafted by working professionals who understand the ground realities of the tech industry. We bridge the gap between academic theory and professional execution through hands-on mentorship and real-world projects.
+            </p>
+<div class="grid grid-cols-2 gap-md pt-base">
+<div class="border-l-4 border-secondary pl-md">
+<div class="font-headline-lg text-headline-lg text-primary">100%</div>
+<p class="font-caption text-caption text-on-surface-variant">Placement Support</p>
+</div>
+<div class="border-l-4 border-secondary pl-md">
+<div class="font-headline-lg text-headline-lg text-primary">Expert</div>
+<p class="font-caption text-caption text-on-surface-variant">Lead Mentors</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl bg-primary text-on-primary">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+<div class="space-y-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-base">Connect With Us</h2>
+<p class="font-body-md text-on-primary-container">Ready to start your professional journey? Get in touch with our career counselors today.</p>
+</div>
+<div class="space-y-md">
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container">Phone Numbers</p>
+<p class="font-title-md text-title-md text-white">+91 9156201767</p>
+<p class="font-title-md text-title-md text-white">+91 9156261767</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container">Email Address</p>
+<p class="font-title-md text-title-md text-white">hr@genztech.pro</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container">Location</p>
+<p class="font-body-md text-body-md text-white max-w-sm">
+                                Shop No.3 Dhruv Darshan Society, near PCCOE College, Sector No.26, Pradhikaran, Nigdi, Pimpri-Chinchwad, Pune, Maharashtra 411044
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface text-on-surface p-lg rounded-2xl">
+<form class="space-y-md">
+<h3 class="font-title-md text-title-md text-primary">Send an Inquiry</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Full Name</label>
+<input class="w-full bg-surface-container border-none focus:ring-2 focus:ring-secondary rounded-lg px-md py-sm" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Email</label>
+<input class="w-full bg-surface-container border-none focus:ring-2 focus:ring-secondary rounded-lg px-md py-sm" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Subject</label>
+<select class="w-full bg-surface-container border-none focus:ring-2 focus:ring-secondary rounded-lg px-md py-sm">
+<option>SAP Training</option>
+<option>CAD/CAE</option>
+<option>AI &amp; Data Analytics</option>
+<option>IT Consulting</option>
+</select>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Message</label>
+<textarea class="w-full bg-surface-container border-none focus:ring-2 focus:ring-secondary rounded-lg px-md py-sm" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-md rounded-full font-title-md text-title-md hover:bg-secondary transition-all">Submit Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop pt-xl pb-lg flex flex-col gap-gutter bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div class="max-w-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary mb-md block">Genztech</span>
+<p class="font-body-md text-body-md text-on-primary/80 mb-lg">
+                A VSK Enterprises Tech Venture. Transforming careers through specialized industry education.
+            </p>
+<div class="flex gap-md">
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">business</span></a>
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">person_add</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-xl">
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md font-bold mb-xs">Navigation</span>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Courses</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Services</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Testimonials</a>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md font-bold mb-xs">Legal</span>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">About Us</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Contact Us</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-on-primary/10 pt-md flex flex-col md:flex-row justify-between items-center gap-md">
+<span class="font-caption text-caption text-on-primary/60">© 2026 Genztech IT Training &amp; Consulting. A VSK Enterprises Tech Venture.</span>
+<div class="flex items-center gap-xs text-on-primary/60 font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">language</span>
+                English (Global)
+            </div>
+</div>
+</footer>
+<script src="assets/js/genztech.js"></script>
+<script>
+        document.querySelectorAll('.course-card-hover').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const icon = card.querySelector('.material-symbols-outlined');
+                icon.style.transform = 'scale(1.2) rotate(5deg)';
+                icon.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                const icon = card.querySelector('.material-symbols-outlined');
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+    </script>
+</body></html>
