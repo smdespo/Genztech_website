@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Short Term Courses | Genztech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../assets/css/genztech.css"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode:"class",
+  theme:{extend:{
+    colors:{"surface":"#f8f9fa","primary":"#162c43","primary-container":"#2d425a","on-primary":"#ffffff","on-primary-container":"#99aecb","secondary":"#046a61","on-secondary":"#ffffff","secondary-container":"#9defe2","on-secondary-container":"#106f65","surface-container-lowest":"#ffffff","surface-container-low":"#f3f4f5","surface-container":"#edeeef","surface-container-high":"#e7e8e9","on-surface":"#191c1d","on-surface-variant":"#43474d","outline":"#74777d","outline-variant":"#c4c6cd","secondary-fixed":"#a0f1e5"},
+    borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
+    spacing:{"lg":"48px","md":"24px","sm":"12px","margin-desktop":"120px","base":"8px","margin-mobile":"16px","xl":"80px","gutter":"24px","xs":"4px"},
+    fontFamily:{"body-lg":["Hanken Grotesk"],"caption":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-xl":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},
+    fontSize:{"body-lg":["18px",{"lineHeight":"28px"}],"caption":["12px",{"lineHeight":"16px"}],"title-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}]}
+  }}
+}
+</script>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop bg-surface border-b border-outline-variant" style="height:90px;">
+  <div class="flex items-center h-full">
+    <a href="homepage.html"><img src="../genztech_logo.png" alt="Genztech Logo" style="height:72px; width:auto; object-fit:contain;" /></a>
+  </div>
+  <nav class="hidden lg:flex items-center gap-1">
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2" href="homepage.html">Home</a>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="career-counselling.html">Career Counselling <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="career-counselling.html">Student Career Guidance</a><a href="career-counselling.html">Domain Selection</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="internships.html">Internships <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="internships.html">1.5 Month</a><a href="internships.html">3 Month</a><a href="internships.html">6 Month</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="certifications.html">Certifications <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="certifications.html">AI/ML</a><a href="certifications.html">CAD/CAM/CAE</a><a href="certifications.html">SAP</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-secondary border-b-2 border-secondary pb-1 px-3 py-2 flex items-center gap-1" href="short-term-courses.html">Courses <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="short-term-courses.html">AI & Data Science</a><a href="short-term-courses.html">Python</a><a href="short-term-courses.html">IoT</a><a href="short-term-courses.html">CAD/CAM/CAE</a><a href="short-term-courses.html">Digital Twin</a><a href="short-term-courses.html">Industry 4.0</a><a href="short-term-courses.html">SAP</a><a href="short-term-courses.html">Embedded Systems</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="domain-cs.html">Domains <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><div class="submenu-header">By Field</div><a href="domain-cs.html">Computer Science</a><a href="domain-mechanical.html">Mechanical</a><a href="domain-mba.html">MBA / Finance</a><a href="domain-etc.html">E&TC</a></div></div>
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2" href="placement.html">Placement</a>
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2" href="contact.html">Contact</a>
+  </nav>
+  <div class="flex items-center gap-sm">
+    <a href="../signuppage.html"><button class="bg-primary text-on-primary px-md py-sm rounded-full text-[16px] font-bold hover:opacity-90 shadow-md">Enroll Now</button></a>
+    <button class="lg:hidden p-2" onclick="toggleMobileMenu()"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu lg:hidden bg-surface border-b border-outline-variant px-margin-mobile py-md">
+  <div class="flex flex-col gap-sm">
+    <a href="homepage.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Home</a>
+    <a href="career-counselling.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Career Counselling</a>
+    <a href="internships.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Internships</a>
+    <a href="certifications.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Certifications</a>
+    <a href="short-term-courses.html" class="font-semibold text-secondary py-2 border-b border-outline-variant">Short Term Courses</a>
+    <a href="placement.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Placement</a>
+    <a href="contact.html" class="font-semibold text-primary py-2">Contact</a>
+    <a href="../signuppage.html"><button class="w-full bg-primary text-on-primary py-sm rounded-full font-bold mt-sm">Enroll Now</button></a>
+  </div>
+</div>
+
+<!-- Hero: replace data-hero-image with your own image link anytime -->
+<section class="page-hero relative min-h-[300px] flex items-end px-margin-mobile md:px-margin-desktop pb-xl pt-xl" data-hero-image="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1600&q=80">
+  <div class="page-hero-media"></div>
+  <div class="hero-overlay"></div>
+  <div class="relative z-10 max-w-3xl space-y-md">
+    <div class="badge badge-teal"><span class="material-symbols-outlined text-[16px]">auto_stories</span> Short Term Courses</div>
+    <h1 class="font-headline-xl text-headline-xl text-white">Learn a New Skill in Weeks</h1>
+    <p class="font-body-lg text-body-lg text-white/85 max-w-xl">Intensive, focused courses from beginner to advanced — built for students and working professionals who want fast, credible upskilling.</p>
+  </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="px-margin-mobile md:px-margin-desktop py-md bg-surface-container-low border-b border-outline-variant">
+  <div class="flex flex-wrap gap-sm" id="filter-tabs">
+    <button onclick="filterCourses('all')" class="filter-tab active bg-primary text-on-primary px-md py-xs rounded-full font-label-md text-label-md transition-all" data-filter="all">All Courses</button>
+    <button onclick="filterCourses('cs')" class="filter-tab bg-surface-container-lowest border border-outline-variant text-primary px-md py-xs rounded-full font-label-md text-label-md hover:bg-primary hover:text-white transition-all" data-filter="cs">Computer Science</button>
+    <button onclick="filterCourses('mech')" class="filter-tab bg-surface-container-lowest border border-outline-variant text-primary px-md py-xs rounded-full font-label-md text-label-md hover:bg-primary hover:text-white transition-all" data-filter="mech">Mechanical</button>
+    <button onclick="filterCourses('mba')" class="filter-tab bg-surface-container-lowest border border-outline-variant text-primary px-md py-xs rounded-full font-label-md text-label-md hover:bg-primary hover:text-white transition-all" data-filter="mba">MBA / Finance</button>
+    <button onclick="filterCourses('etc')" class="filter-tab bg-surface-container-lowest border border-outline-variant text-primary px-md py-xs rounded-full font-label-md text-label-md hover:bg-primary hover:text-white transition-all" data-filter="etc">E&TC</button>
+  </div>
+</section>
+
+<!-- Courses Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="courses-grid">
+
+    <!-- AI & Data Science -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="cs">
+      <div class="relative overflow-hidden">
+        <div class="h-3 bg-gradient-to-r from-primary to-secondary"></div>
+        <div class="p-md">
+          <div class="flex justify-between items-start mb-md">
+            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary card-icon">analytics</span>
+            </div>
+            <div class="flex flex-col items-end gap-xs">
+              <span class="badge badge-teal">Beginner → Advanced</span>
+              <span class="font-caption text-caption text-on-surface-variant">3 Months</span>
+            </div>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary mb-xs">AI & Data Science</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-md">Python, pandas, scikit-learn, model deployment — a complete data science journey from zero to portfolio.</p>
+          <div class="flex flex-wrap gap-xs mb-md">
+            <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Python</span>
+            <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Pandas</span>
+            <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">ML</span>
+            <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Power BI</span>
+          </div>
+          <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="cs">
+      <div class="h-3 bg-gradient-to-r from-secondary to-primary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">code</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-navy">Zero to Hero</span>
+            <span class="font-caption text-caption text-on-surface-variant">6 Weeks</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Python Programming</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Core Python, OOP, automation scripting, file handling — with 3 build-along mini projects.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Python</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">OOP</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Automation</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- IoT -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="etc">
+      <div class="h-3 bg-gradient-to-r from-primary to-secondary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">sensors</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-teal">Hands-On</span>
+            <span class="font-caption text-caption text-on-surface-variant">2 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Internet of Things (IoT)</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Build connected devices with Arduino, Raspberry Pi, sensors, and cloud platforms from scratch.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Arduino</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Raspberry Pi</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">AWS IoT</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- CAD/CAM/CAE -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="mech">
+      <div class="h-3 bg-gradient-to-r from-secondary to-primary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">architecture</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-navy">Intermediate</span>
+            <span class="font-caption text-caption text-on-surface-variant">4 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">CAD/CAM/CAE</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Product design and engineering simulation using CATIA V5, ANSYS, and Siemens NX.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">CATIA V5</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">ANSYS</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">NX</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- Digital Twin -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="mech">
+      <div class="h-3 bg-gradient-to-r from-primary to-secondary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">device_hub</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-teal">Emerging Tech</span>
+            <span class="font-caption text-caption text-on-surface-variant">6 Weeks</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Digital Twin</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Virtual replicas of physical systems — simulation, predictive maintenance, and smart manufacturing.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Simulation</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">IIoT</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Industry 4.0</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- Industry 4.0 -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="mech">
+      <div class="h-3 bg-gradient-to-r from-secondary to-primary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">precision_manufacturing</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-navy">All Engineers</span>
+            <span class="font-caption text-caption text-on-surface-variant">3 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Industry 4.0</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Smart factories, automation, robotics, and AI integration in industrial manufacturing processes.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Automation</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Robotics</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">PLC</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- Automotive Product Design -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="mech">
+      <div class="h-3 bg-gradient-to-r from-primary to-secondary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">directions_car</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-teal">Automotive</span>
+            <span class="font-caption text-caption text-on-surface-variant">2 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Automotive Product Design</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Vehicle component design, surface modeling, GD&amp;T, and design validation workflows for automotive applications.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">CATIA</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">GD&amp;T</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">Surface Modeling</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- SAP -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="mba">
+      <div class="h-3 bg-gradient-to-r from-primary to-secondary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">settings_suggest</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-teal">MBA/CS/Mech</span>
+            <span class="font-caption text-caption text-on-surface-variant">3-5 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">SAP (FICO / MM / SD)</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Enterprise resource planning with SAP modules — from navigation basics to full business process execution.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">FICO</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">MM</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">SD</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">S/4HANA</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- Embedded Systems -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="etc">
+      <div class="h-3 bg-gradient-to-r from-secondary to-primary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">developer_board</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-navy">E&TC / CS</span>
+            <span class="font-caption text-caption text-on-surface-variant">2 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Embedded Systems</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">8051, ARM Cortex, PLC programming — embedded C, peripheral interfacing, and real hardware projects.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">8051</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">ARM</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">PLC</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+    <!-- Industrial Automation -->
+    <div class="course-card card-hover bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-cat="etc">
+      <div class="h-3 bg-gradient-to-r from-primary to-secondary"></div>
+      <div class="p-md">
+        <div class="flex justify-between items-start mb-md">
+          <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary card-icon">precision_manufacturing</span>
+          </div>
+          <div class="flex flex-col items-end gap-xs">
+            <span class="badge badge-teal">Core E&amp;TC</span>
+            <span class="font-caption text-caption text-on-surface-variant">2 Months</span>
+          </div>
+        </div>
+        <h3 class="font-title-md text-title-md text-primary mb-xs">Industrial Automation</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">PLC, SCADA, HMI, and ladder logic training focused on factory automation and control systems.</p>
+        <div class="flex flex-wrap gap-xs mb-md">
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">PLC</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">SCADA</span>
+          <span class="bg-surface-container px-sm py-1 rounded text-[11px] font-semibold text-primary">HMI</span>
+        </div>
+        <a href="../signuppage.html"><button class="w-full border border-secondary text-secondary py-sm rounded-lg font-label-md hover:bg-secondary hover:text-white transition-colors">Enroll Now</button></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-xl px-margin-mobile md:px-margin-desktop text-center">
+  <h2 class="font-headline-lg text-headline-lg text-white mb-sm">Not Sure Which Course?</h2>
+  <p class="font-body-md text-body-md text-on-primary/80 mb-lg max-w-xl mx-auto">Book a free career counselling session — our experts will match you to the right course for your goals.</p>
+  <div class="flex flex-col sm:flex-row gap-md justify-center">
+    <a href="career-counselling.html"><button class="bg-secondary text-on-secondary px-xl py-md rounded-full font-title-md hover:opacity-90 transition-all">Get Free Guidance</button></a>
+    <a href="contact.html"><button class="border border-white/50 text-white px-xl py-md rounded-full font-title-md hover:bg-white/10 transition-colors">Contact Us</button></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop pt-xl pb-lg flex flex-col gap-gutter bg-primary text-on-primary">
+  <div class="flex flex-col md:flex-row justify-between items-start gap-gutter">
+    <div class="max-w-sm">
+      <span class="font-headline-lg text-headline-lg font-bold mb-md block">Genztech</span>
+      <p class="font-body-md text-body-md text-on-primary/80 mb-lg">A VSK Enterprises Tech Venture.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-xl">
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md font-bold mb-xs">Navigation</span>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="homepage.html">Home</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="internships.html">Internships</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="certifications.html">Certifications</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="placement.html">Placement</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md font-bold mb-xs">Legal</span>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="contact.html">Contact</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full border-t border-on-primary/10 pt-md">
+    <span class="font-caption text-caption text-on-primary/60">© 2026 Genztech IT Training & Consulting. A VSK Enterprises Tech Venture.</span>
+  </div>
+</footer>
+
+<script src="../assets/js/genztech.js"></script>
+<script>
+function filterCourses(cat) {
+  document.querySelectorAll('.course-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  document.querySelectorAll('.filter-tab').forEach(btn => {
+    if (btn.dataset.filter === cat) {
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container-lowest', 'border', 'border-outline-variant', 'text-primary');
+    } else {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-lowest', 'border', 'border-outline-variant', 'text-primary');
+    }
+  });
+}
+</script>
+</body>
+</html>

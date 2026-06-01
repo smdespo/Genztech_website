@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admin Panel | Genztech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#162c43",
+        secondary: "#046a61",
+        surface: "#f8f9fa",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f3f4f5",
+        "surface-container": "#edeeef",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#43474d",
+        outline: "#74777d",
+        "outline-variant": "#c4c6cd",
+        "on-primary": "#ffffff"
+      },
+      fontFamily: {
+        sans: ["Hanken Grotesk"]
+      }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Hanken Grotesk', sans-serif; background: linear-gradient(180deg, #f8f9fa 0%, #eef3f3 100%); }
+.admin-panel-hidden { display: none; }
+</style>
+</head>
+<body class="min-h-screen text-on-surface">
+<main class="px-4 py-8 md:px-10 xl:px-16" data-admin-dashboard>
+  <div class="mx-auto max-w-7xl">
+    <div class="mb-8 flex flex-col gap-4 rounded-3xl bg-primary px-6 py-8 text-white shadow-xl md:flex-row md:items-end md:justify-between">
+      <div>
+        <p class="mb-2 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold">
+          <span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+          Admin Dashboard
+        </p>
+        <h1 class="text-3xl font-extrabold md:text-4xl">Submission Control Center</h1>
+        <p class="mt-2 max-w-2xl text-white/75">Track enquiry forms, enrollment forms, application forms, and free counselling requests in one place.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a class="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white/10" href="loginpage.html">Back to Login</a>
+        <button class="inline-flex items-center justify-center rounded-full bg-secondary px-5 py-3 font-semibold text-white transition hover:opacity-90" data-admin-refresh type="button">
+          Refresh Data
+        </button>
+        <button class="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white/10" data-admin-logout type="button">
+          Log Out
+        </button>
+      </div>
+    </div>
+
+    <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-5 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-on-surface-variant">Enquiries</p>
+        <p class="mt-3 text-4xl font-extrabold text-primary" data-summary-count="enquiries">0</p>
+      </div>
+      <div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-5 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-on-surface-variant">Enrollments</p>
+        <p class="mt-3 text-4xl font-extrabold text-primary" data-summary-count="enrollments">0</p>
+      </div>
+      <div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-5 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-on-surface-variant">Applications</p>
+        <p class="mt-3 text-4xl font-extrabold text-primary" data-summary-count="applications">0</p>
+      </div>
+      <div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-5 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-on-surface-variant">Counselling</p>
+        <p class="mt-3 text-4xl font-extrabold text-primary" data-summary-count="counselling">0</p>
+      </div>
+    </div>
+
+    <div class="mb-6 flex flex-wrap gap-3">
+      <button class="rounded-full bg-primary px-5 py-3 font-semibold text-white" data-admin-tab="enquiries" type="button">Enquiry Forms</button>
+      <button class="rounded-full border border-outline-variant bg-surface-container-lowest px-5 py-3 font-semibold text-primary" data-admin-tab="enrollments" type="button">Enrollment Forms</button>
+      <button class="rounded-full border border-outline-variant bg-surface-container-lowest px-5 py-3 font-semibold text-primary" data-admin-tab="applications" type="button">Application Forms</button>
+      <button class="rounded-full border border-outline-variant bg-surface-container-lowest px-5 py-3 font-semibold text-primary" data-admin-tab="counselling" type="button">Free Counselling</button>
+    </div>
+
+    <div class="rounded-3xl border border-outline-variant bg-surface-container-lowest p-5 shadow-sm">
+      <div class="mb-4 flex items-center justify-between gap-3">
+        <div>
+          <h2 class="text-2xl font-bold text-primary" data-admin-title>Enquiry Forms</h2>
+          <p class="text-sm text-on-surface-variant">Latest submissions appear first.</p>
+        </div>
+        <div class="hidden rounded-full border border-outline-variant bg-surface-container px-4 py-2 text-sm font-semibold text-on-surface-variant" data-admin-status></div>
+      </div>
+
+      <section data-admin-panel="enquiries">
+        <div class="grid gap-4" data-admin-list="enquiries"></div>
+      </section>
+      <section class="admin-panel-hidden" data-admin-panel="enrollments">
+        <div class="grid gap-4" data-admin-list="enrollments"></div>
+      </section>
+      <section class="admin-panel-hidden" data-admin-panel="applications">
+        <div class="grid gap-4" data-admin-list="applications"></div>
+      </section>
+      <section class="admin-panel-hidden" data-admin-panel="counselling">
+        <div class="grid gap-4" data-admin-list="counselling"></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/genztech.js"></script>
+</body>
+</html>

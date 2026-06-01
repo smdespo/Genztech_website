@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Genztech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../assets/css/genztech.css"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode:"class",
+  theme:{extend:{
+    colors:{"surface":"#f8f9fa","primary":"#162c43","primary-container":"#2d425a","on-primary":"#ffffff","on-primary-container":"#99aecb","secondary":"#046a61","on-secondary":"#ffffff","secondary-container":"#9defe2","surface-container-lowest":"#ffffff","surface-container-low":"#f3f4f5","surface-container":"#edeeef","on-surface":"#191c1d","on-surface-variant":"#43474d","outline":"#74777d","outline-variant":"#c4c6cd","secondary-fixed":"#a0f1e5"},
+    borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
+    spacing:{"lg":"48px","md":"24px","sm":"12px","margin-desktop":"120px","base":"8px","margin-mobile":"16px","xl":"80px","gutter":"24px","xs":"4px"},
+    fontFamily:{"body-lg":["Hanken Grotesk"],"caption":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-xl":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},
+    fontSize:{"body-lg":["18px",{"lineHeight":"28px"}],"caption":["12px",{"lineHeight":"16px"}],"title-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}]}
+  }}
+}
+</script>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop bg-surface border-b border-outline-variant" style="height:90px;">
+  <div class="flex items-center h-full">
+    <a href="homepage.html"><img src="../genztech_logo.png" alt="Genztech Logo" style="height:72px;width:auto;object-fit:contain;" /></a>
+  </div>
+  <nav class="hidden lg:flex items-center gap-1">
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2" href="homepage.html">Home</a>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="career-counselling.html">Career Counselling <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="career-counselling.html">Student Career Guidance</a><a href="career-counselling.html">Domain Selection Guidance</a><a href="career-counselling.html">Expert Consultation</a><a href="career-counselling.html">Skill Roadmap</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="internships.html">Internships <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="internships.html">1.5 Month Internship</a><a href="internships.html">3 Month Internship</a><a href="internships.html">6 Month Internship</a><a href="internships.html">Industry Projects</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="certifications.html">Certifications <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="certifications.html">AI/ML</a><a href="certifications.html">CAD/CAM/CAE</a><a href="certifications.html">IoT</a><a href="certifications.html">SAP</a><a href="certifications.html">Python</a><a href="certifications.html">Industry 4.0</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="short-term-courses.html">Courses <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><a href="short-term-courses.html">AI & Data Science</a><a href="short-term-courses.html">Python</a><a href="short-term-courses.html">IoT</a><a href="short-term-courses.html">CAD/CAM/CAE</a><a href="short-term-courses.html">SAP</a><a href="short-term-courses.html">Embedded Systems</a></div></div>
+    <div class="dropdown"><a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2 flex items-center gap-1" href="domain-cs.html">Domains <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="dropdown-menu"><div class="submenu-header">By Field</div><a href="domain-cs.html">Computer Science / IT</a><a href="domain-mechanical.html">Mechanical Engineering</a><a href="domain-mba.html">MBA / Finance</a><a href="domain-etc.html">E&TC / Electronics</a></div></div>
+    <a class="text-[16px] font-semibold text-primary hover:text-secondary px-3 py-2" href="placement.html">Placement</a>
+    <a class="text-[16px] font-semibold text-secondary border-b-2 border-secondary pb-1 px-3 py-2" href="contact.html">Contact</a>
+  </nav>
+  <div class="flex items-center gap-sm">
+    <a href="../signuppage.html"><button class="bg-primary text-on-primary px-md py-sm rounded-full text-[16px] font-bold hover:opacity-90 shadow-md">Enroll Now</button></a>
+    <button class="lg:hidden p-2" onclick="toggleMobileMenu()"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu lg:hidden bg-surface border-b border-outline-variant px-margin-mobile py-md">
+  <div class="flex flex-col gap-sm">
+    <a href="homepage.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Home</a>
+    <a href="career-counselling.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Career Counselling</a>
+    <a href="internships.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Internships</a>
+    <a href="certifications.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Certifications</a>
+    <a href="short-term-courses.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Short Term Courses</a>
+    <a href="placement.html" class="font-semibold text-primary py-2 border-b border-outline-variant">Placement</a>
+    <a href="contact.html" class="font-semibold text-secondary py-2">Contact</a>
+    <a href="../signuppage.html"><button class="w-full bg-primary text-on-primary py-sm rounded-full font-bold mt-sm">Enroll Now</button></a>
+  </div>
+</div>
+
+<!-- Hero: replace data-hero-image with your own image link anytime -->
+<section class="page-hero relative min-h-[280px] flex items-end px-margin-mobile md:px-margin-desktop pb-xl pt-xl" data-hero-image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80">
+  <div class="page-hero-media"></div>
+  <div class="hero-overlay"></div>
+  <div class="relative z-10 max-w-2xl space-y-md">
+    <div class="badge badge-teal"><span class="material-symbols-outlined text-[16px]">support_agent</span> Get In Touch</div>
+    <h1 class="font-headline-xl text-headline-xl text-white">We're Here to Help</h1>
+    <p class="font-body-lg text-body-lg text-white/85">Have questions about courses, internships, or placement? Reach out and our team will respond within 24 hours.</p>
+  </div>
+</section>
+
+<!-- Contact Info + Form -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-start">
+
+    <!-- Contact Details -->
+    <div class="space-y-lg">
+      <div>
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-md">Reach Us Directly</h2>
+        <div class="space-y-md">
+          <div class="flex gap-md items-start">
+            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-secondary">location_on</span>
+            </div>
+            <div>
+              <h4 class="font-title-md text-title-md text-primary">Office Address</h4>
+              <p class="font-body-md text-body-md text-on-surface-variant">Genztech IT Training & Consulting<br/>Pune, Maharashtra — India</p>
+            </div>
+          </div>
+          <div class="flex gap-md items-start">
+            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-secondary">call</span>
+            </div>
+            <div>
+              <h4 class="font-title-md text-title-md text-primary">Phone / WhatsApp</h4>
+              <a href="tel:+919156201767" class="font-body-md text-body-md text-secondary hover:underline">+91 91562 01767</a>
+              <p class="font-caption text-caption text-on-surface-variant mt-xs">Mon–Sat, 9 AM – 7 PM IST</p>
+            </div>
+          </div>
+          <div class="flex gap-md items-start">
+            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-secondary">mail</span>
+            </div>
+            <div>
+              <h4 class="font-title-md text-title-md text-primary">Email</h4>
+              <a href="mailto:info@genztech.in" class="font-body-md text-body-md text-secondary hover:underline">info@genztech.in</a>
+              <p class="font-caption text-caption text-on-surface-variant mt-xs">We reply within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WhatsApp CTA -->
+      <div class="bg-surface-container-low border border-outline-variant rounded-xl p-md">
+        <h3 class="font-title-md text-title-md text-primary mb-sm">Instant Help on WhatsApp</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Get answers about admissions, fees, batch schedules, and placement within minutes.</p>
+        <a href="https://wa.me/919156201767?text=Hi%20Genztech%2C%20I%20want%20to%20know%20more%20about%20your%20programs." target="_blank">
+          <button class="whatsapp-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <!-- Map placeholder -->
+      <div class="rounded-xl overflow-hidden border border-outline-variant h-56 bg-surface-container flex items-center justify-center">
+        <div class="text-center text-on-surface-variant">
+          <span class="material-symbols-outlined text-[48px] text-secondary block mb-sm">map</span>
+          <p class="font-body-md text-body-md">Pune, Maharashtra, India</p>
+          <a href="https://maps.google.com/?q=Pune+Maharashtra" target="_blank" class="font-label-md text-label-md text-secondary hover:underline mt-xs block">Open in Google Maps →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-lg shadow-sm">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Send an Inquiry</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Fill in the form below and our counselling team will get back to you shortly.</p>
+      <form id="contact-enquiry-form" class="space-y-md" data-form-kind="enquiry" data-source-page="contact">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+          <div>
+            <label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Full Name</label>
+            <input type="text" name="fullName" placeholder="Your full name" required class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md text-body-md"/>
+          </div>
+          <div>
+            <label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Email Address</label>
+            <input type="email" name="email" placeholder="you@email.com" required class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md text-body-md"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+          <div>
+            <label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Phone Number</label>
+            <input type="tel" name="phone" placeholder="+91 00000 00000" class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md text-body-md"/>
+          </div>
+          <div>
+            <label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Course / Domain Interest</label>
+            <select class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md text-body-md" name="subject">
+              <option value="">Select a topic</option>
+              <option>AI & Data Science</option>
+              <option>SAP (FICO / MM / SD)</option>
+              <option>CAD/CAM/CAE</option>
+              <option>IoT / Embedded Systems</option>
+              <option>Industry 4.0</option>
+              <option>Internship Programs</option>
+              <option>Career Counselling</option>
+              <option>Placement Assistance</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="font-label-md text-label-md text-on-surface-variant uppercase block mb-xs">Your Message</label>
+          <textarea rows="5" name="message" placeholder="Tell us what you're looking for, your background, or any questions you have..." class="w-full bg-surface-container border border-outline-variant rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary outline-none font-body-md text-body-md resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-primary text-on-primary py-md rounded-full font-title-md hover:bg-secondary transition-all flex items-center justify-center gap-sm">
+          Send Message <span class="material-symbols-outlined">send</span>
+        </button>
+        <div class="hidden" data-form-message></div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Quick Links -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl bg-surface-container-low">
+  <div class="text-center mb-lg">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Quick Access</h2>
+    <div class="section-accent"></div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+    <a href="career-counselling.html" class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md text-center">
+      <span class="material-symbols-outlined text-[40px] text-secondary card-icon block mb-sm">psychology</span>
+      <h4 class="font-title-md text-title-md text-primary">Career Counselling</h4>
+      <p class="font-caption text-caption text-on-surface-variant mt-xs">Book a free session</p>
+    </a>
+    <a href="internships.html" class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md text-center">
+      <span class="material-symbols-outlined text-[40px] text-secondary card-icon block mb-sm">work</span>
+      <h4 class="font-title-md text-title-md text-primary">Internships</h4>
+      <p class="font-caption text-caption text-on-surface-variant mt-xs">Apply for a program</p>
+    </a>
+    <a href="certifications.html" class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md text-center">
+      <span class="material-symbols-outlined text-[40px] text-secondary card-icon block mb-sm">workspace_premium</span>
+      <h4 class="font-title-md text-title-md text-primary">Certifications</h4>
+      <p class="font-caption text-caption text-on-surface-variant mt-xs">Browse programs</p>
+    </a>
+    <a href="placement.html" class="card-hover bg-surface-container-lowest border border-outline-variant rounded-xl p-md text-center">
+      <span class="material-symbols-outlined text-[40px] text-secondary card-icon block mb-sm">business_center</span>
+      <h4 class="font-title-md text-title-md text-primary">Placement</h4>
+      <p class="font-caption text-caption text-on-surface-variant mt-xs">View tracks</p>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop pt-xl pb-lg flex flex-col gap-gutter bg-primary text-on-primary">
+  <div class="flex flex-col md:flex-row justify-between items-start gap-gutter">
+    <div class="max-w-sm">
+      <span class="font-headline-lg text-headline-lg font-bold mb-md block">Genztech</span>
+      <p class="font-body-md text-body-md text-on-primary/80 mb-lg">A VSK Enterprises Tech Venture. Transforming careers through specialized industry education.</p>
+      <div class="flex gap-md">
+        <a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+        <a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="mailto:info@genztech.in"><span class="material-symbols-outlined">mail</span></a>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-xl">
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md font-bold mb-xs">Navigation</span>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="homepage.html">Home</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="internships.html">Internships</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="certifications.html">Certifications</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="placement.html">Placement</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md font-bold mb-xs">Domains</span>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-cs.html">Computer Science</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-mechanical.html">Mechanical</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-mba.html">MBA / Finance</a>
+        <a class="font-body-md text-on-primary/80 hover:text-secondary-fixed transition-colors" href="domain-etc.html">E&TC</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full border-t border-on-primary/10 pt-md flex flex-col md:flex-row justify-between items-center gap-md">
+    <span class="font-caption text-caption text-on-primary/60">© 2026 Genztech IT Training & Consulting. A VSK Enterprises Tech Venture.</span>
+  </div>
+</footer>
+
+<script src="../assets/js/genztech.js"></script>
+</body>
+</html>
