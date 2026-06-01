@@ -16,7 +16,7 @@ const GENZTECH_API_BASE = (function resolveApiBase() {
         return 'http://127.0.0.1:8000';
     }
     // PRODUCTION: replace with your Render service URL after deploying the backend
-    return 'https://genztech-backend.onrender.com';
+    return 'https://genz-website-1.onrender.com';
 })();
 const GENZTECH_ADMIN_TOKEN_KEY = 'genztech_admin_token';
 const GENZTECH_ROUTES = {
